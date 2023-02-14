@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="Css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <fieldset style="border: 1px solid #000;">
+            <legend>Your particulars!</legend>
+            <p>
+                <label> Are your names?<input type="text" name="Your full names"></label>
+            </p>
+            <p>
+                Is your email address?<input type="email" name="your email address" value="projectxevents6@gmail.com" readonly>
+            </p>
+            <p>
+                <input type="number" placeholder=" What is your age?" min="18" max="35">
+            </p>
+            <p>
+                What is your password?<input type="password" maxlength="">
+                <button>Submit</button>
+                <p>
+                    <label>Tell us about yourself</label>
+                    <textarea>Whats on your mind</textarea>
+
+                    <p>
+                        <label>Profile <Picture></label>
+                        <input type="file">
+
+                    </p>
+
+                </p>
+
+        </fieldset>
+        <p>
+            <label>Please choose the colour of the car that you would like to rent</label>
+            <label><input type="radio" name="cc" checked> white </label>
+            <label><input type="radio" name="cc"> Red</label>
+            <label><input type="radio" name="cc"> Yellow</label>
+
+        </p>
+        <p>
+            <label>Which Provinces have you been to?</label>
+            <select name="province" multiple>
+                <option value="GP" selected="selected">Gauteng</option>
+                <option>Mpumalanga</option>
+                <option>Northern Cape</option>
+                <option>Limpopo</option>
+                <option>Free State</option>
+                <option>Estern Cape</option>
+                <option>Western Cape</option>
+                <option>Kwa-Zulu Natal</option>
+            </select>
+
+        </P>
+        <p>
+            <label for="subscription"> Subscribe to our newsletter?</label>
+            <input type="checkbox" name="subscribe" id="subscription" checked value="Yes">
+        </p>
+        </p>
+    </form>
+
+</body>
+
+</html>
